@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:arbenn/data/event/event_data.dart';
 import 'package:arbenn/components/event_summary.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CalendarPage extends StatefulWidget {
   const CalendarPage({super.key});
@@ -34,7 +35,7 @@ class _CalendarPageState extends State<CalendarPage> {
         numPlaceholders: 1,
         emptyText: _showPastEvent
             ? null
-            : "Tu ne participe pas encore à un événement. Tu peux participer à des événements exitants ou bien créer ton propre événement.",
+            : AppLocalizations.of(context)!.warning_message_no_attended_events,
         header: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const CalendarTitle(),
           CalendarSegmentedButton(

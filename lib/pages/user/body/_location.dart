@@ -1,6 +1,7 @@
 import 'package:akar_icons_flutter/akar_icons_flutter.dart';
 import 'package:arbenn/data/user/user_data.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ProfilePageLocation extends StatelessWidget {
   final UserData user;
@@ -19,7 +20,7 @@ class ProfilePageLocation extends StatelessWidget {
         ),
         const SizedBox(width: 5),
         Text(
-          "${user.location.city} · ${user.age} ans",
+          "${user.location.city} · ${user.age} ${AppLocalizations.of(context)!.years}",
           style: const TextStyle(
             fontSize: 15,
             color: Colors.grey,

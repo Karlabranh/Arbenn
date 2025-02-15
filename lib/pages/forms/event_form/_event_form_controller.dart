@@ -10,6 +10,7 @@ import 'package:arbenn/data/user/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:collection/collection.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class EventFormController {
   File? localImage = null;
@@ -33,25 +34,25 @@ class EventFormController {
     if (title.text == "") {
       showSnackBar(
         context: context,
-        text: "Veillez choisir un titre pour votre événement.",
+        text: AppLocalizations.of(context)!.warning_message_no_title_event,
       );
       return true;
     } else if (tagSearch.tags == []) {
       showSnackBar(
         context: context,
-        text: "Veillez sélectionner au moins un tag.",
+        text: AppLocalizations.of(context)!.warning_message_no_tags,
       );
       return true;
     } else if (date.date == null) {
       showSnackBar(
         context: context,
-        text: "Veillez sélectionner une date pour votre événement.",
+        text: AppLocalizations.of(context)!.warning_message_no_date_event,
       );
       return true;
     } else if (address.address == null) {
       showSnackBar(
         context: context,
-        text: "Veillez sélectionner une addresse pour votre événement.",
+        text: AppLocalizations.of(context)!.warning_message_no_address_event,
       );
       return true;
     }
@@ -98,7 +99,7 @@ class EventFormController {
           if (value && context.mounted) {
             showSnackBar(
               context: context,
-              text: "An error occured 1",
+              text: AppLocalizations.of(context)!.error_message_save_event,
             );
           }
           return value;
@@ -123,7 +124,7 @@ class EventFormController {
         if (context.mounted) {
           showSnackBar(
             context: context,
-            text: "An error occured 2",
+            text: AppLocalizations.of(context)!.error_message_create_new_event,
           );
         }
         return null;
@@ -133,7 +134,7 @@ class EventFormController {
           if (context.mounted) {
             showSnackBar(
               context: context,
-              text: "An error occured 3",
+              text: AppLocalizations.of(context)!.error_message_create_new_event,
             );
           }
           return null;

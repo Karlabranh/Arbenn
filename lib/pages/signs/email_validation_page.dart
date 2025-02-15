@@ -3,6 +3,7 @@ import 'package:arbenn/data/user/authentication.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class EmailValidationPage extends StatefulWidget {
   final int userId;
@@ -71,10 +72,10 @@ class _EmailValidationPageState extends State<EmailValidationPage> {
                 size: 150,
                 color: Colors.white,
               ),
-              const Text(
-                "Verifiez vos emails, nous vous en avons envoyé un pour activer votre compte.",
+              Text(
+                AppLocalizations.of(context)!.account_verification_message,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 15,
                   decoration: null,
@@ -84,7 +85,7 @@ class _EmailValidationPageState extends State<EmailValidationPage> {
               if (!_emailSent)
                 ElevatedButton(
                   onPressed: () => sendAgain(),
-                  child: const Text("Envoyer à nouveau"),
+                  child: Text(AppLocalizations.of(context)!.send_again),
                 )
             ],
           ),

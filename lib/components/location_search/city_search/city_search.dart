@@ -4,6 +4,7 @@ import 'package:arbenn/components/overlay.dart';
 import 'package:arbenn/components/scroller.dart';
 import 'package:arbenn/data/locations_data.dart';
 import 'package:flutter/material.dart' hide Autocomplete;
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SearchCity extends StatefulWidget {
   final Function(City) onFinish;
@@ -35,7 +36,7 @@ class _SearchCityState extends State<SearchCity> {
   @override
   Widget build(BuildContext context) {
     return FullPageOverlay(
-      title: "Ville",
+      title: AppLocalizations.of(context)!.city,
       body: Stack(children: [
         Container(
             margin: const EdgeInsets.only(top: 70, bottom: 10),
@@ -60,7 +61,7 @@ class _SearchCityState extends State<SearchCity> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           margin: const EdgeInsets.only(top: 10),
           child: SearchInput(
-            label: "Chercher une ville...",
+            label: AppLocalizations.of(context)!.find_city,
             controller: _autocomplete.controller,
           ),
         ),

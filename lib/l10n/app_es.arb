@@ -49,15 +49,42 @@
   "chats": "Chats",
   "title": "Título",
   "address": "Dirección",
-  "description": "Descripción",
-  "create_event_subtitle": "Tienes una actividad increíble en mente 🔥? Cuéntanos todos los detalles y ¡nosotros creamos el evento!",
-  "chat_with": "Chatea con {name}",
-  "@chat_with": {
-    "placeholders": {
-        "name": {
-        "type": "String",
-        "example": "Bob"
-        }
-    }
-  }
+  "create_event_subtitle": "¿Tienes una actividad genial en mente 🔥? ¡Danos algunos detalles y crea tu evento!",
+  "warning_message_no_attended_events" : "Aún no participas en ningún evento. Puedes unirte a eventos emocionantes o crear tu propio evento.",
+  "warning_message_no_title_event" : "Por favor, elige un título para tu evento.",
+  "warning_message_no_tags" : "Por favor, selecciona al menos una etiqueta.",
+  "warning_message_no_date_event" : "Por favor, selecciona una fecha para tu evento.",
+  "warning_message_no_address_event" : "Por favor, selecciona una dirección para tu evento.",
+  "error_message_save_event" : "No se pudo guardar",
+  "error_message_create_new_event" : "No se pudo crear un nuevo evento",
+  "warning_message_no_name": "Por favor, inserta tu nombre",
+  "warning_message_no_lastname" : "Por favor, inserta tu apellido",
+  "warning_message_no_birth" : "Por favor, ingresa tu fecha de nacimiento.",
+  "warning_message_no_city" : "Por favor, ingresa tu ciudad de residencia.",
+  "warning_message_no_hobbies" :"Por favor, ingresa al menos un hobby.",
+  "warning_message_no_picture" : "La foto no se pudo guardar.",
+  "account_verification_message" : "Verifica tu correo electrónico, para activar la cuenta.",
+  "send_again" : "Enviar de nuevo",
+  "years" : "años", 
+  "loading": "Cargando",
+  "january": "Enero",
+  "february": "Febrero",
+  "march": "Marzo",
+  "april": "Abril",
+  "may": "Mayo",
+  "june": "Junio",
+  "july": "Julio",
+  "august": "Agosto",
+  "september": "Septiembre",
+  "october": "Octubre",
+  "november": "Noviembre",
+  "december": "Diciembre",
+  "monday": "Lunes",
+  "thursday": "Jueves",
+  "wednesday": "Miércoles",
+  "tuesday": "Martes",
+  "friday": "Viernes",
+  "saturday": "Sábado",
+  "sunday": "Domingo",
+  "find_city" : "Encontrar una ciudad..."
 }

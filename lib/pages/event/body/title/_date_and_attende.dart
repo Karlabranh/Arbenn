@@ -22,7 +22,7 @@ class DateAndAttendes extends StatelessWidget {
         ),
         const SizedBox(width: 5),
         Text(
-          "${event.date.day} ${monthFromInt(event.date.month)} · ${event.date.hour}:${event.date.minute}",
+          "${event.date.day} ${monthFromInt(event.date.month, context)} · ${event.date.hour}:${event.date.minute}",
           style: const TextStyle(fontSize: 14, color: Colors.black45),
         ),
         if (event.maxAttendes != null)

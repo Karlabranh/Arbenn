@@ -4,6 +4,7 @@ import 'package:arbenn/components/overlay.dart';
 import 'package:arbenn/components/scroller.dart';
 import 'package:arbenn/data/locations_data.dart';
 import 'package:flutter/material.dart' hide Autocomplete;
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SearchAddress extends StatefulWidget {
   final Function(Address) onFinish;
@@ -59,7 +60,7 @@ class _SearchAddressState extends State<SearchAddress> {
   @override
   Widget build(BuildContext context) {
     return FullPageOverlay(
-      title: "Addresse",
+      title: AppLocalizations.of(context)!.address,
       body: Stack(children: [
         Container(
             margin: const EdgeInsets.only(top: 80, bottom: 10),
@@ -75,7 +76,7 @@ class _SearchAddressState extends State<SearchAddress> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           margin: const EdgeInsets.only(top: 10),
           child: SearchInput(
-            label: "Chercher une addresse...",
+            label: AppLocalizations.of(context)!.address_search,
             controller: _autocomplete.controller,
           ),
         ),

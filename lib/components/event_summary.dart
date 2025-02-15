@@ -225,7 +225,7 @@ class EventSummary extends StatelessWidget {
     );
   }
 
-  Widget _date() {
+  Widget _date(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -236,7 +236,7 @@ class EventSummary extends StatelessWidget {
         ),
         const SizedBox(width: 5),
         Text(
-          "${data.date.day} ${monthFromInt(data.date.month)} · ${data.date.hour}:${data.date.minute}",
+          "${data.date.day} ${monthFromInt(data.date.month, context)} · ${data.date.hour}:${data.date.minute}",
           style: const TextStyle(
             color: Colors.white,
             fontSize: 14,
@@ -261,7 +261,7 @@ class EventSummary extends StatelessWidget {
     );
   }
 
-  Widget _buildInfosRow() {
+  Widget _buildInfosRow(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       child: Wrap(
@@ -269,14 +269,14 @@ class EventSummary extends StatelessWidget {
         direction: Axis.horizontal,
         children: [
           _location(),
-          _date(),
+          _date(context),
           _user(),
         ],
       ),
     );
   }
 
-  Widget _buildBottomInfos() {
+  Widget _buildBottomInfos(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(12),
       child: BackdropFilter(
@@ -301,7 +301,7 @@ class EventSummary extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 5),
-              _buildInfosRow()
+              _buildInfosRow(context)
             ],
           ),
         ),
@@ -345,7 +345,7 @@ class EventSummary extends StatelessWidget {
               child: Column(children: [
                 _buildTopRow(),
                 const Expanded(child: Text("")),
-                _buildBottomInfos(),
+                _buildBottomInfos(context),
               ]),
             ),
             onTap: () {

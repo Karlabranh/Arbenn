@@ -7,6 +7,8 @@ import 'package:arbenn/data/user/user_data.dart';
 import 'package:arbenn/data/user/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class UserFormController {
   final TextEditingController firstName = TextEditingController();
@@ -37,31 +39,31 @@ class UserFormController {
     if (firstName.text == "") {
       showSnackBar(
         context: context,
-        text: "Veillez entrer votre prénom.",
+        text:   AppLocalizations.of(context)!.warning_message_no_name,
       );
       return null;
     } else if (lastName.text == "") {
       showSnackBar(
         context: context,
-        text: "Veillez entrer votre nom de famille.",
+        text: AppLocalizations.of(context)!.warning_message_no_lastname,
       );
       return null;
     } else if (birthDate.date == null) {
       showSnackBar(
         context: context,
-        text: "Veillez entrer votre date de naissance.",
+        text: AppLocalizations.of(context)!.warning_message_no_birth,
       );
       return null;
     } else if (city.city == null) {
       showSnackBar(
         context: context,
-        text: "Veillez entrer votre ville de residence.",
+        text: AppLocalizations.of(context)!.warning_message_no_city,
       );
       return null;
     } else if (tagSearch.tags == []) {
       showSnackBar(
         context: context,
-        text: "Veillez entrer au moins un centre d'intérêt.",
+        text: AppLocalizations.of(context)!.warning_message_no_hobbies,
       );
       return null;
     }
@@ -92,7 +94,7 @@ class UserFormController {
           if (context.mounted) {
             showSnackBar(
               context: context,
-              text: "La photo n'a pas pu être sauvegardée",
+              text: AppLocalizations.of(context)!.warning_message_no_picture,
             );
           }
           return ();

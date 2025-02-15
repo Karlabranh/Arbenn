@@ -49,14 +49,42 @@
   "chats": "Chats",
   "title": "Titel",
   "address": "Adresse",
-  "chat_with": "Chat mit {name}",
-  "create_event_subtitle": "Hast du eine coole Aktivität im Sinn 🔥? Gib uns ein paar Details und erstelle dein Ereignis!",
-  "@chat_with": {
-    "placeholders": {
-        "name": {
-        "type": "String",
-        "example": "Bob"
-        }
-    }
-  }
+  "create_event_subtitle": "Hast du eine coole Aktivität geplant 🔥? Gib uns einige Details und erstelle dein Event!",
+  "warning_message_no_attended_events" : "Du nimmst noch an keinem Event teil. Du kannst an spannenden Events teilnehmen oder dein eigenes Event erstellen.",
+  "warning_message_no_title_event" : "Bitte wähle einen Titel für dein Event.",
+  "warning_message_no_tags" : "Bitte wähle mindestens ein Tag.",
+  "warning_message_no_date_event" : "Bitte wähle ein Datum für dein Event.",
+  "warning_message_no_address_event" : "Bitte wähle eine Adresse für dein Event.",
+  "error_message_save_event" : "Speichern nicht möglich",
+  "error_message_create_new_event" : "Neues Event konnte nicht erstellt werden",
+  "warning_message_no_name": "Bitte gib deinen Vornamen ein",
+  "warning_message_no_lastname" : "Bitte gib deinen Nachnamen ein",
+  "warning_message_no_birth" : "Bitte gib dein Geburtsdatum ein.",
+  "warning_message_no_city" : "Bitte gib deine Stadt ein.",
+  "warning_message_no_hobbies" :"Bitte gib mindestens ein Hobby ein.",
+  "warning_message_no_picture" : "Das Foto konnte nicht gespeichert werden.",
+  "account_verification_message" : "Verifiez vos emails, nous vous en avons envoyé un pour activer votre compte.",
+  "send_again" : "Envoyer à nouveau",
+  "years" : "ans", 
+  "loading": "Loading",
+  "january": "Januar",
+  "february": "Februar",
+  "march": "März",
+  "april": "April",
+  "may": "Mai",
+  "june": "Juni",
+  "july": "Juli",
+  "august": "August",
+  "september": "September",
+  "october": "Oktober",
+  "november": "November",
+  "december": "Dezember",
+  "monday": "Montag",
+  "thursday": "Donnerstag",
+  "wednesday": "Mittwoch",
+  "tuesday": "Dienstag",
+  "friday": "Freitag",
+  "saturday": "Samstag",
+  "sunday": "Sonntag",
+  "find_city" : "Chercher une ville..."
 }

@@ -1,47 +1,50 @@
-String monthFromInt(int m) {
+import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+String monthFromInt(int m, BuildContext context) {
   switch (m) {
     case DateTime.january:
-      return "Janvier";
+      return AppLocalizations.of(context)!.january;
     case DateTime.february:
-      return "Fevrier";
+      return AppLocalizations.of(context)!.february;
     case DateTime.march:
-      return "Mars";
+      return AppLocalizations.of(context)!.march;
     case DateTime.april:
-      return "Avril";
+      return AppLocalizations.of(context)!.april;
     case DateTime.may:
-      return "Mai";
+      return AppLocalizations.of(context)!.may;
     case DateTime.june:
-      return "June";
+      return AppLocalizations.of(context)!.june;
     case DateTime.july:
-      return "Juillet";
+      return AppLocalizations.of(context)!.july;
     case DateTime.august:
-      return "Aout";
+      return AppLocalizations.of(context)!.august;
     case DateTime.september:
-      return "Septembre";
+      return AppLocalizations.of(context)!.september;
     case DateTime.october:
-      return "Octobre";
+      return AppLocalizations.of(context)!.october;
     case DateTime.november:
-      return "Novembre";
+      return AppLocalizations.of(context)!.november;
     default:
-      return "Décembre";
+      return AppLocalizations.of(context)!.december;
   }
 }
 
-String weekDayFromInt(int d) {
+String weekDayFromInt(int d, BuildContext context) {
   switch (d) {
     case DateTime.monday:
-      return "Lundi";
+      return AppLocalizations.of(context)!.monday;
     case DateTime.tuesday:
-      return "Mardi";
+      return AppLocalizations.of(context)!.thursday;
     case DateTime.wednesday:
-      return "Mercredi";
+      return AppLocalizations.of(context)!.wednesday;
     case DateTime.thursday:
-      return "Jeudi";
+      return AppLocalizations.of(context)!.tuesday;
     case DateTime.friday:
-      return "Vendredi";
+      return AppLocalizations.of(context)!.friday;
     case DateTime.saturday:
-      return "Samedi";
+      return AppLocalizations.of(context)!.saturday;
     default:
-      return "Dimanche";
+      return AppLocalizations.of(context)!.sunday;
   }
 }
